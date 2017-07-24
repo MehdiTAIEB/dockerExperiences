@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/MehdiTAIEB/dockerExperiences/issues"
   },
-  "homepage": "https://github.com/MehdiTAIEB/dockerExperiences#readme"
+  "homepage": "https://github.com/MehdiTAIEB/dockerExperiences#readme",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
 }

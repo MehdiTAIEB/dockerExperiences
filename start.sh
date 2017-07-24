@@ -1,1 +1,1 @@
-echo 'mehdi';
+npm start
