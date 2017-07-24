@@ -1,9 +1,5 @@
-db:
-  image: mongo
-  ports:
-    - "27017:27017"
 web:
-  build: .
+  build: ./build
   volumes:
     - .:/app
   ports:
@@ -12,3 +8,7 @@ web:
     - db
   environment:
     PORT: 3000 
+db:
+  image: mongo
+  ports:
+    - "27017:27017"
