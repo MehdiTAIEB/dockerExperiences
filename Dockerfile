@@ -5,4 +5,5 @@ WORKDIR /app
 COPY . /app
 COPY package.json /app/package.json
 RUN npm install
-CMD ./start.sh
+RUN npm install nodemon -g
+CMD nodemon index.js
