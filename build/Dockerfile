@@ -8,4 +8,4 @@ COPY . /app
 RUN npm install
 RUN npm install nodemon -g
 
-CMD nodemon index.js
+CMD npm start
