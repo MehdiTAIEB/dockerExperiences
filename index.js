@@ -15,7 +15,7 @@ mongoose.connect(MONGO_DB);
 
 var video_route = require('./src/routes/video');
 
-app.use('/video', video_route);
+app.use('/videos', video_route);
 
 app.get('/', function (req, res) {
   res.send('Hello World!')

@@ -3,7 +3,7 @@ var router = express.Router();
 var Video = require('../models/videos.js');
 
 router.get('/', function(req,res,next) {
-	Video.find().exec(function(err, vids) {
+	Video.find().limit(5).exec(function(err, vids) {
 		res.send(vids);
 	});
 });
